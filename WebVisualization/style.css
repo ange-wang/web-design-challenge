@@ -1,0 +1,31 @@
+/* navbar */
+#navbarNavDropdown {
+  justify-content:flex-end
+}
+
+.main-container {
+  background-color: lightslategray;
+  height: 100vh;
+  width: 100vw;
+}
+
+.content-c {
+  margin:50px;
+}
+
+.main-pane, .side-pane{
+  background-color: white;
+  /* height:70% */
+  padding:20px;
+  margin: 10px
+  /* margin: 20px 20px 50px */
+}
+
+@media (max-width:767px) {
+  .main-container {
+    background-color:white;
+  }
+  .main-pane {
+    padding:0px;
+  }
+}
