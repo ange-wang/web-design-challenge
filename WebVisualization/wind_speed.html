@@ -3,60 +3,91 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Web Design</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Wind Speed</title>
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="lux.css">
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-<div class=main-container>
+<div class=page-container>
 
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Web Name</a>
+    <a class="navbar-brand" href="index.html">Latitude</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav" >
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown active">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Plots
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Viz 1</a>
-            <a class="dropdown-item" href="#">Viz 2</a>
-            <a class="dropdown-item" href="#">Viz 3</a>
-            <a class="dropdown-item" href="#">Viz 4</a>
+          <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Comparison<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="comparison.html">Comparison</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Data</a>
+          <a class="nav-link" href="data.html">Data</a>
         <li></li>      
       </ul>
     </div>
   </nav>
 
-  <div class=content-c>
-
-    <!--These col-md-3 columns go half wide when on a small screen and full on extra small-->
-    <div class="row">
-      <div class="col-lg-8 col-md-6 main-pane">
-        <div class="">
-          <h2>Page Title</h2>
+    <div class="row justify-content-md-center">
+      <div class="col-lg-6 col-md-12 main-pane">
+          <h1>Wind Speed</h1>
           <hr>
-        </div>
+          <img src="assets/images/Fig4.svg" class="large-image" alt="max temperature">
+          <p>
+            Through this visualisation, you can observe that the highest recorded wind speed 
+            was at the equator (i.e. latitude 0). The further you are from the equator in the 
+            southern hemisphere, the less windy it becomes, whereas in the northern hemisphere, 
+            it remains constant.
+          </p>
+
       </div>
-      <div class="col-lg-3 col-md-4 side-pane">
-        <div class="box purple">.col-lg-4 .col-md-4</div>
+      <div class="col-lg-3 col-md-12 side-pane">
+        <!-- <div class=""> -->
+          <h3>Plots</h3>
+          <hr>
+          <div class="row">
+            <div class="col-xl-6 col-lg-12 col-md-3 col-sm-6">
+              <a href="max_temp.html">
+                <img src="assets/images/Fig1.svg" class="small-image =" alt="max temperature">
+              </a>
+              
+            </div>
+            <div class="col-xl-6 col-lg-12 col-md-3 col-sm-6">
+              <a href="humidity.html">
+                <img src="assets/images/Fig2.svg" class="small-image" alt="humidity">
+              </a>
+              
+            </div>
+            <div class="col-xl-6 col-lg-12 col-md-3 col-sm-6">
+              <a href="cloudiness.html">
+                <img src="assets/images/Fig3.svg" class="small-image" alt="cloudiness">
+              </a>
+            </div>
+
+            <div class="col-xl-6 col-lg-12 col-md-3 col-sm-6">
+              <!-- <a href="wind_speed.html"> -->
+                <img src="assets/images/Fig4.svg" class="small-image selected" alt="wind speed">
+              <!-- </a> -->
+            </div>
+            
+          </div>
+        <!-- </div> -->
       </div>
     </div>
-  </div>
-
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
