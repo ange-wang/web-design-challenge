@@ -6,7 +6,7 @@
   --eggshell-color: #f6f5f1;
   --accent-color-teal: #037E8C;
   --accent-color-salmon: #D9A296;
-  --accent-color-orange: #EEBB4D;
+  --accent-color-orange: #030303;
   --accent-color-green: #96BB7C;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -22,13 +22,11 @@ h4{
 }
 .page-container {
   background-color: var(--main-bg-color);
+  width: 100%
 }
-
-.navbar-dark {
-  /* background-color: ; */
-  /* padding:0px */
+.row {
+  margin:0px !important;
 }
-
 .nav-item.active .nav-link {
   color: var(--accent-color-teal) !important;
 }
@@ -48,6 +46,11 @@ h4{
   border: none;
 }
 
+hr.comp-hr, hr.first-hr {
+  margin-top: 0px;
+  border-top: 0px;
+}
+
 .row{
   margin:auto
 }
@@ -65,7 +68,7 @@ h4{
 .main-pane, .side-pane{
   background-color: white;
   /* height:70% */
-  padding:30px;
+  padding:30px !important;
   margin: 40px 20px
 }
 
@@ -77,6 +80,12 @@ h4{
   width: 50%;
   min-width: 400px;
   float: left;
+}
+
+.large-image {
+  width: 80%;
+  display: block;
+  margin: auto
 }
 
 .small-image{
@@ -163,7 +172,7 @@ ul li {
 
   .main-pane, .side-pane {
     margin:40px 0px;
-    padding: 30px !important;
+    padding: 50px !important;
     height: auto;
   }
 
@@ -179,4 +188,10 @@ ul li {
   .main-image {
     min-width: 400px
   }
+
+  hr.comp-hr {
+    margin-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
 }
