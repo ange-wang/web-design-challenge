@@ -4,17 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Web Design</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="lux.css">
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-<div class=main-container>
+<div class=page-container>
 
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Web Name</a>
+    <a class="navbar-brand" href="index.html">Latitude</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -24,38 +25,62 @@
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Plots
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Viz 1</a>
-            <a class="dropdown-item" href="#">Viz 2</a>
-            <a class="dropdown-item" href="#">Viz 3</a>
-            <a class="dropdown-item" href="#">Viz 4</a>
+          <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
           </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Comparison<span class="sr-only">(current)</span></a>
+        <li class="nav-item active">
+          <a class="nav-link" href="comparison.html">Comparison</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Data</a>
+          <a class="nav-link" href="data.html">Data</a>
         <li></li>      
       </ul>
     </div>
   </nav>
 
-  <div class=content-c>
+  <!-- <div class=content-c> -->
 
     <!--These col-md-3 columns go half wide when on a small screen and full on extra small-->
-    <div class="row">
-      <div class="col-lg-8 col-md-6 main-pane">
-        <div class="">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-8 col-sm-12 main-pane">
           <h2>Page Title</h2>
           <hr>
+         <p>Click any plot to get an in-depth analysis.</p>
+        <div class='row'>
+          <div class="col-lg-6 col-sm-12 comp-img">
+            <h4>vs. Max Temperature</h3>
+            <a href=viz_01.html>
+              <img src="assets/images/Fig1.png" class="small-image" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6 col-sm-12 comp-img">
+            <h4>vs. Humidity</h3>
+            <a href=viz_02.html>
+              <img src="assets/images/Fig2.png" class="small-image" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6 col-sm-12 comp-img">
+            <h4>vs. Cloudiness</h3>
+            <a href=viz_03.html>
+              <img src="assets/images/Fig3.png" class="small-image" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6 col-sm-12 comp-img">
+            <h4>vs. Wind Speed</h3>
+            <a href=viz_04.html>
+              <img src="assets/images/Fig4.png" class="small-image" alt="">
+            </a>
+            
+          </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-4 side-pane">
-        <div class="box purple">.col-lg-4 .col-md-4</div>
+
       </div>
     </div>
-  </div>
+  <!-- </div> -->
 
 </div>
 
